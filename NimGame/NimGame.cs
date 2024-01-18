@@ -10,26 +10,51 @@ namespace NimGame
     {
         public bool isGameOver;
         public bool isPlayerOneTurn;
-        private int[][] pegs;
+        private int[1][] pegs;
 
         public void switchPlayerTurn()
         {
-
+            if(checkGameEnd == false)
+            {
+                if(!isPlayerOneTurn)
+                {
+                    isPlayerOneTurn = true;
+                }
+                else
+                {
+                    isPlayerOneTurn = false;
+                }
+            }
+            else
+            {
+                //go to win screen
+            }
         }
 
         public void checkGameEnd()
         {
-
+            if(pegsRemaining == 0)
+            {
+                isGameOver = true;
+            }
         }
 
-        public void removePegs(int pegs1, int pegs2)
+        public void removePegs(int index)
         {
-
+            if (pegs[0][index] > 0)
+            {
+                pegs[0][index]--;
+            }
         }
 
-        public int pegsRemaining(int pegs1, int pegs2)
+        public int pegsRemaining(int index)
         {
-            return 0;
+            int totalPegs = 0;
+            for(int i = 0; i < pegs[0].length; i++)
+            {
+                totalPegs += pegs[0][index];
+            }
+            return totalPegs;
         }
     }
 }
