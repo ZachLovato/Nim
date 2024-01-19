@@ -23,5 +23,20 @@ namespace NimGame
         {
             InitializeComponent();
         }
-    }
+
+		private void Start_Game_Click(object sender, RoutedEventArgs e)
+		{
+            // until a game window is made keep this commented
+            // replace window with the name of the game window
+            //Window gameWindow = new Window;
+            //gameWindow.showDialog();
+
+            this.Close();
+		}
+
+		private void Quit_Game_Click(object sender, RoutedEventArgs e)
+		{
+			Application.Current.Shutdown();
+		}
+	}
 }
