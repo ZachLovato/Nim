@@ -30,7 +30,7 @@
                    />
 
         <Button Height="30" Width="80" Grid.Column="1" Grid.Row="1"
-                Margin="0 0 0 80"
+                Margin="0 0 0 80" Click="Start_Game_Click"
                 >
             <Button.Effect>
                 <DropShadowEffect/>
@@ -44,7 +44,7 @@
             <TextBlock> Settings </TextBlock>
         </Button>
         <Button Height="30" Width="80" Grid.Column="1" Grid.Row="1"
-                Margin="0 80 0 0"
+                Margin="0 80 0 0" Click="Quit_Game_Click"
                 >
             <Button.Effect>
                 <DropShadowEffect/>
