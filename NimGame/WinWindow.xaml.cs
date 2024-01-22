@@ -26,7 +26,11 @@ namespace NimGame
 
         private void Replay_Button_Click(object sender, RoutedEventArgs e)
         {
+            Application.Current.MainWindow.Close();
 
+            Application.Current.MainWindow = new titleWindow();
+
+            Application.Current.MainWindow.Show();
         }
 
         private void Quit_Button_Click(object sender, RoutedEventArgs e)
