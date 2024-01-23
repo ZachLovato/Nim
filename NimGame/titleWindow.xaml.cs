@@ -28,8 +28,8 @@ namespace NimGame
 		{
             // until a game window is made keep this commented
             // replace window with the name of the game window
-            //Window gameWindow = new Window;
-            //gameWindow.showDialog();
+            Window gameWindow = new MainWindow();
+            gameWindow.Show();
 
             this.Close();
 		}
