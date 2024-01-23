@@ -10,11 +10,11 @@ namespace NimGame
     {
         public bool isGameOver;
         public bool isPlayerOneTurn;
-        private int[1][] pegs;
+        private int[][] pegs;
 
         public void switchPlayerTurn()
         {
-            if(checkGameEnd == false)
+            if(isGameOver == false)
             {
                 if(!isPlayerOneTurn)
                 {
@@ -33,7 +33,7 @@ namespace NimGame
 
         public void checkGameEnd()
         {
-            if(pegsRemaining == 0)
+            if(pegsRemaining() == 0)
             {
                 isGameOver = true;
             }
@@ -47,12 +47,12 @@ namespace NimGame
             }
         }
 
-        public int pegsRemaining(int index)
+        public int pegsRemaining()
         {
             int totalPegs = 0;
-            for(int i = 0; i < pegs[0].length; i++)
+            for(int i = 0; i < pegs[0].Count(); i++)
             {
-                totalPegs += pegs[0][index];
+                totalPegs += pegs[0][i];
             }
             return totalPegs;
         }
