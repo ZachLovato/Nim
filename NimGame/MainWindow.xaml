@@ -7,6 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FFF05959" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Image x:Name="Match" HorizontalAlignment="Center" Height="68" Margin="0,85,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy" HorizontalAlignment="Left" Height="68" Margin="354,131,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy1" HorizontalAlignment="Left" Height="68" Margin="400,131,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy2" HorizontalAlignment="Center" Height="68" Margin="0,131,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy3" HorizontalAlignment="Left" Height="68" Margin="354,177,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy4" HorizontalAlignment="Left" Height="68" Margin="400,177,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy5" HorizontalAlignment="Center" Height="68" Margin="0,177,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy6" HorizontalAlignment="Left" Height="68" Margin="423,177,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy7" HorizontalAlignment="Left" Height="68" Margin="331,177,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy8" HorizontalAlignment="Left" Height="68" Margin="354,223,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy9" HorizontalAlignment="Left" Height="68" Margin="400,223,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy10" HorizontalAlignment="Center" Height="68" Margin="0,223,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy11" HorizontalAlignment="Left" Height="68" Margin="423,223,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy12" HorizontalAlignment="Left" Height="68" Margin="331,223,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy13" HorizontalAlignment="Left" Height="68" Margin="446,223,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <Image x:Name="Match_Copy14" HorizontalAlignment="Left" Height="68" Margin="308,223,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
+        <TextBlock x:Name="Title_Player_Turn" HorizontalAlignment="Center" Margin="0,41,0,0" TextWrapping="Wrap" Text="[Player]'s Turn" VerticalAlignment="Top" TextAlignment="Center" FontSize="18" Foreground="White"/>
+        <Button x:Name="Button_Row1" Content="Row 1" HorizontalAlignment="Left" Margin="497,98,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Button_Row2" Content="Row 2" HorizontalAlignment="Left" Margin="497,144,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Button_Row3" Content="Row 3" HorizontalAlignment="Left" Margin="497,190,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Button_Row4" Content="Row 4" HorizontalAlignment="Left" Margin="497,236,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Button_EndTurn" Content="End Turn" HorizontalAlignment="Left" Margin="497,278,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
