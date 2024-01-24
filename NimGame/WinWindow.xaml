@@ -28,7 +28,7 @@
                 <Style/>
             </TextBlock.Style>
         </TextBlock>
-        <TextBlock HorizontalAlignment="Center" Height="18" Margin="0,134,0,0" TextWrapping="Wrap" Text="[Insert Player] Wins" VerticalAlignment="Top" Width="110" Foreground="White" Uid="txtPlayerWins">
+        <TextBlock x:Name="WinText" HorizontalAlignment="Center" Height="18" Margin="0,134,0,0" TextWrapping="Wrap" Text="[Insert Player] Wins" VerticalAlignment="Top" Width="110" Foreground="White" Uid="txtPlayerWins">
             <TextBlock.Style>
                 <Style/>
             </TextBlock.Style>

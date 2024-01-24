@@ -31,11 +31,11 @@
         <Image x:Name="Match_Copy13" HorizontalAlignment="Left" Height="68" Margin="446,223,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
         <Image x:Name="Match_Copy14" HorizontalAlignment="Left" Height="68" Margin="308,223,0,0" VerticalAlignment="Top" Width="46" Source="/match.png"/>
         <TextBlock x:Name="Title_Player_Turn" HorizontalAlignment="Center" Margin="0,41,0,0" TextWrapping="Wrap" Text="[Player]'s Turn" VerticalAlignment="Top" TextAlignment="Center" FontSize="18" Foreground="White"/>
-        <Button x:Name="Button_Row1" Content="Row 1" HorizontalAlignment="Left" Margin="497,98,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Button_Row2" Content="Row 2" HorizontalAlignment="Left" Margin="497,144,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Button_Row3" Content="Row 3" HorizontalAlignment="Left" Margin="497,190,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Button_Row4" Content="Row 4" HorizontalAlignment="Left" Margin="497,236,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Button_EndTurn" Content="End Turn" HorizontalAlignment="Left" Margin="372,307,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Button_Row1" Content="Row 1" IsEnabled="True" HorizontalAlignment="Left" Margin="497,98,0,0" VerticalAlignment="Top" Click="Button_Row1_Click"/>
+        <Button x:Name="Button_Row2" Content="Row 2" IsEnabled="True" HorizontalAlignment="Left" Margin="497,144,0,0" VerticalAlignment="Top" Click="Button_Row2_Click"/>
+        <Button x:Name="Button_Row3" Content="Row 3" IsEnabled="True" HorizontalAlignment="Left" Margin="497,190,0,0" VerticalAlignment="Top" Click="Button_Row3_Click"/>
+        <Button x:Name="Button_Row4" Content="Row 4" IsEnabled="True" HorizontalAlignment="Left" Margin="497,236,0,0" VerticalAlignment="Top" Click="Button_Row4_Click"/>
+        <Button x:Name="Button_EndTurn" Content="End Turn" HorizontalAlignment="Left" Margin="372,307,0,0" VerticalAlignment="Top" Click="Button_EndTurn_Click"/>
 
     </Grid>
 </Window>

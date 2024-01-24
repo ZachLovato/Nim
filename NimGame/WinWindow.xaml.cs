@@ -19,23 +19,38 @@ namespace NimGame
     /// </summary>
     public partial class WinWindow : Window
     {
-        public WinWindow()
+        //new changed the window to take a boolean to check game win
+        public WinWindow(bool win)
         {
             InitializeComponent();
+            setWinText(win);
         }
 
         private void Replay_Button_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.MainWindow.Close();
-
             Application.Current.MainWindow = new titleWindow();
 
             Application.Current.MainWindow.Show();
+            //new
+            this.Close();
         }
 
         private void Quit_Button_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
+        }
+
+        //new sets the game winner text
+        private void setWinText(bool win)
+        {
+            if (win)
+            {
+                WinText.Text = "Player 2 Wins";
+            }
+            else
+            {
+                WinText.Text = "Player 1 Wins";
+            }
         }
     }
 }
