@@ -67,6 +67,7 @@ namespace NimGame
 			if(index1 == 0)
 			{
 				Row1[0].Visibility = Visibility.Collapsed;
+				index1--;
 			}
 		}
 		private void Button_Row2_Click(object sender, RoutedEventArgs e)
