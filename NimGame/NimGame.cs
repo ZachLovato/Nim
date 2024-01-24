@@ -7,7 +7,7 @@ using System.Windows;
 
 namespace NimGame
 {
-    internal class NimGame
+    public class NimGames
     {
         public bool isGameOver;
         public bool isPlayerOneTurn = true;

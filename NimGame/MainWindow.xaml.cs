@@ -19,7 +19,7 @@ namespace NimGame
 	public partial class MainWindow : Window
 	{
 		//create new array of the images
-		NimGame nim = new NimGame();
+		NimGames nim = new NimGames();
 		Image[] Row1 = new Image[1];
 		Image[] Row2 = new Image[3];
 		Image[] Row3 = new Image[5];
