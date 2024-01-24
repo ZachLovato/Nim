@@ -20,11 +20,11 @@ namespace UnitTest
         public void TestMethod_RemovePegs() 
         {
             var game = new NimGames();
-            int pegs = 2;
+            int value = 3;
 
-            game.removePegs(pegs);
+            game.removePegs(value);
 
-            Assert.AreEqual(1, pegs);
+            Assert.AreEqual(15, game.pegsRemaining());
         }
     }
 }
